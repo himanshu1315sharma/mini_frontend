@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { mobile } from "../responsive";
 import { Link } from "react-router-dom";
 
+
 const Container = styled.div`
   height: 60px;
   ${mobile({ height: "50px" })}
@@ -79,20 +80,25 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>LAMA.</Logo>
+        
+          <Logo>
+
+          <img src="https://i.postimg.cc/xCJRFFtv/44.jpg" alt="Girl in a jacket" width="40" height="40" style={{"text-decoration": "none",  "margin-right": "25px","cursor": "pointer","padding-bottom": "0px"}}></img>
+            AIR FASHION</Logo>
         </Center>
         <Right>
           <MenuItem>
           
-          <Link to="/">Register</Link>
+          <Link to="/" style={{"text-decoration": "none",  "margin-right": "20px","font-size": "18px","font-weight" : "300","cursor": "pointer"}}>Register</Link>
           </MenuItem>
-          <MenuItem><Link to="/login">SIGN IN</Link></MenuItem>
-          <MenuItem><Link to="/product">Products</Link></MenuItem>
-          <MenuItem><Link to="/productlist">Product list</Link></MenuItem>
+          <MenuItem><Link to="/login" style={{"text-decoration": "none",  "margin-right": "20px","font-size": "18px","font-weight" : "300","cursor": "pointer"}}>SIGN IN</Link></MenuItem>
+          
+          <MenuItem style={{"text-decoration": "none"}}><Link to="/productlist" style={{"text-decoration": "none",  "margin-right": "20px","font-size": "18px","font-weight" : "300","cursor": "pointer"}}>Product list</Link></MenuItem>
           <MenuItem>
-            <Badge badgeContent={4} color="primary">
-              <ShoppingCartOutlined />
-            </Badge>
+            
+            <img src="https://i.postimg.cc/xCJRFFtv/44.jpg" alt="Girl in a jacket" width="40" height="40" style={{"text-decoration": "none",  "margin-right": "5px","cursor": "pointer","padding-bottom": "0px"}}></img>
+
+            
           </MenuItem>
         </Right>
       </Wrapper>
