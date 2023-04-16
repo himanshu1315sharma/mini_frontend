@@ -1,0 +1,9 @@
+/api2
+/checkpoints
+/cp-vton-plus
+/test
+/train
+/youtube
+*.zip
+test_pairs.txt
+train_pairs.txt
